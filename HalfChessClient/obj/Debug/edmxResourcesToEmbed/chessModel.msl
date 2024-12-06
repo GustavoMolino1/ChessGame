@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="chessModelStoreContainer" CdmEntityContainer="chessEntities">
+    <EntitySetMapping Name="Games">
+      <EntityTypeMapping TypeName="chessModel.Game">
+        <MappingFragment StoreEntitySet="Games">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="game_id" ColumnName="game_id" />
+          <ScalarProperty Name="player_name" ColumnName="player_name" />
+          <ScalarProperty Name="player_id" ColumnName="player_id" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="think_time" ColumnName="think_time" />
+          <ScalarProperty Name="finshed" ColumnName="finshed" />
+          <ScalarProperty Name="win" ColumnName="win" />
+          <ScalarProperty Name="finish_reason" ColumnName="finish_reason" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MoveHistories">
+      <EntityTypeMapping TypeName="chessModel.MoveHistory">
+        <MappingFragment StoreEntitySet="MoveHistory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="game_id" ColumnName="game_id" />
+          <ScalarProperty Name="move" ColumnName="move" />
+          <ScalarProperty Name="move_index" ColumnName="move_index" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
